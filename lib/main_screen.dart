@@ -9,10 +9,37 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    var size = MediaQuery.of(context).size;
+    return SafeArea(
       child: Scaffold(
-        body: Center(child: Text("Main Screen")),
-      ),
+          body: Padding(
+        padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+        child: Column(children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              const Icon(Icons.menu),
+              Image.asset(
+                Assets.images.logo.path,
+                height: size.height / 13.6,
+              ),
+              const Icon(Icons.search)
+            ],
+          ),
+          Stack(
+            children: [
+              Container(
+                  width: size.width / 1.19,
+                  height: size.height / 4.2,
+                  decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(16)),
+                      image: DecorationImage(
+                          image: (Image.asset(Assets.images.programming.path)
+                              .image))))
+            ],
+          )
+        ]),
+      )),
     );
   }
 }
