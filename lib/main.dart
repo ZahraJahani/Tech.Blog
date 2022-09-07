@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.w700),
               subtitle1: TextStyle(
                   fontFamily: 'dana',
-                  fontSize: 16,
+                  fontSize: 14,
                   color: solidColors.posterSubtitle,
                   fontWeight: FontWeight.w300),
               bodyText1: TextStyle(

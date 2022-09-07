@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tec/gen/assets.gen.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:tec/models/fake_data.dart';
 import 'package:tec/my_colors.dart';
 
 class MainScreen extends StatelessWidget {
@@ -16,6 +17,7 @@ class MainScreen extends StatelessWidget {
           body: Padding(
         padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
         child: Column(children: [
+          //appbar
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -28,7 +30,7 @@ class MainScreen extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 8,
+            height: 13,
           ),
           Stack(
             children: [
@@ -38,8 +40,7 @@ class MainScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: const BorderRadius.all(Radius.circular(16)),
                     image: DecorationImage(
-                        image:
-                            (Image.asset(Assets.images.programming.path).image),
+                        image: AssetImage(homePagePosterMap["imageAsset"]),
                         fit: BoxFit.cover)),
                 foregroundDecoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(16)),
@@ -58,13 +59,27 @@ class MainScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text(
-                          "ملیکا عزیزی - یک روز پیش",
+                          homePagePosterMap["writer"] +
+                              " - " +
+                              homePagePosterMap["date"],
                           style: textTheme.subtitle1,
                         ),
-                        Text(
-                          "Like 253",
-                          style: textTheme.subtitle1,
-                        )
+                        Row(
+                          children: [
+                            Text(
+                              homePagePosterMap["view"],
+                              style: textTheme.subtitle1,
+                            ),
+                            const SizedBox(
+                              width: 4,
+                            ),
+                            const Icon(
+                              Icons.remove_red_eye_sharp,
+                              color: solidColors.posterSubtitle,
+                              size: 17,
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                     Text(
@@ -75,6 +90,22 @@ class MainScreen extends StatelessWidget {
                 ),
               )
             ],
+          ),
+          SizedBox(
+            height: 100,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 5,
+                itemBuilder: ((context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 20,
+                      width: 40,
+                      color: Colors.black,
+                    ),
+                  );
+                })),
           )
         ]),
       )),
