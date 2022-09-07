@@ -24,4 +24,9 @@ class gradientColors {
     Color.fromARGB(255, 0, 0, 0),
     Color.fromARGB(255, 63, 63, 87)
   ];
+  static const List<Color> homePosterCover = [
+    Color.fromARGB(0, 0, 0, 0),
+    Color.fromARGB(195, 72, 20, 88),
+    Color.fromARGB(255, 280, 20, 81)
+  ];
 }

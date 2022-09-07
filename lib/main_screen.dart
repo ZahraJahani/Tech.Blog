@@ -26,6 +26,9 @@ class MainScreen extends StatelessWidget {
               const Icon(Icons.search)
             ],
           ),
+          const SizedBox(
+            height: 8,
+          ),
           Stack(
             children: [
               Container(
@@ -35,7 +38,17 @@ class MainScreen extends StatelessWidget {
                       borderRadius: const BorderRadius.all(Radius.circular(16)),
                       image: DecorationImage(
                           image: (Image.asset(Assets.images.programming.path)
-                              .image))))
+                              .image),
+                          fit: BoxFit.cover))),
+              Container(
+                  width: size.width / 1.19,
+                  height: size.height / 4.2,
+                  decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(16)),
+                      gradient: LinearGradient(
+                          colors: gradientColors.homePosterCover,
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter)))
             ],
           )
         ]),
