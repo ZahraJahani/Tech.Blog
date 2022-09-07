@@ -32,10 +32,31 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             fontFamily: 'dana',
             textTheme: const TextTheme(
-              headline1: TextStyle(),
-              bodyText1: TextStyle(),
-              headline2: TextStyle(),
-              headline3: TextStyle(),
+              headline1: TextStyle(
+                  fontFamily: 'dana',
+                  fontSize: 16,
+                  color: solidColors.posterTitle,
+                  fontWeight: FontWeight.w700),
+              subtitle1: TextStyle(
+                  fontFamily: 'dana',
+                  fontSize: 16,
+                  color: solidColors.posterSubtitle,
+                  fontWeight: FontWeight.w300),
+              bodyText1: TextStyle(
+                  fontFamily: 'dana',
+                  fontSize: 14,
+                  color: Color.fromARGB(255, 70, 70, 70),
+                  fontWeight: FontWeight.w700),
+              headline2: TextStyle(
+                  fontFamily: 'dana',
+                  fontSize: 14,
+                  color: Color.fromARGB(255, 70, 70, 70),
+                  fontWeight: FontWeight.w700),
+              headline3: TextStyle(
+                  fontFamily: 'dana',
+                  fontSize: 14,
+                  color: Color.fromARGB(255, 70, 70, 70),
+                  fontWeight: FontWeight.w700),
               headline4: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 14,

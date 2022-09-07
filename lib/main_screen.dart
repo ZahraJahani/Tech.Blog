@@ -9,6 +9,7 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var textTheme = Theme.of(context).textTheme;
     var size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
@@ -32,23 +33,47 @@ class MainScreen extends StatelessWidget {
           Stack(
             children: [
               Container(
-                  width: size.width / 1.19,
-                  height: size.height / 4.2,
-                  decoration: BoxDecoration(
-                      borderRadius: const BorderRadius.all(Radius.circular(16)),
-                      image: DecorationImage(
-                          image: (Image.asset(Assets.images.programming.path)
-                              .image),
-                          fit: BoxFit.cover))),
-              Container(
-                  width: size.width / 1.19,
-                  height: size.height / 4.2,
-                  decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(16)),
-                      gradient: LinearGradient(
-                          colors: gradientColors.homePosterCover,
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter)))
+                width: size.width / 1.19,
+                height: size.height / 4.2,
+                decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.all(Radius.circular(16)),
+                    image: DecorationImage(
+                        image:
+                            (Image.asset(Assets.images.programming.path).image),
+                        fit: BoxFit.cover)),
+                foregroundDecoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(16)),
+                    gradient: LinearGradient(
+                        colors: gradientColors.homePosterCover,
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter)),
+              ),
+              Positioned(
+                bottom: 8,
+                left: 0,
+                right: 0,
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          "ملیکا عزیزی - یک روز پیش",
+                          style: textTheme.subtitle1,
+                        ),
+                        Text(
+                          "Like 253",
+                          style: textTheme.subtitle1,
+                        )
+                      ],
+                    ),
+                    Text(
+                      "دوازده قدم برنامه نویسی یک دوره ی ...س",
+                      style: textTheme.headline1,
+                    )
+                  ],
+                ),
+              )
             ],
           )
         ]),
