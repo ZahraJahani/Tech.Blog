@@ -12,6 +12,8 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var textTheme = Theme.of(context).textTheme;
     var size = MediaQuery.of(context).size;
+    double bodyMargin = size.width / 12.46;
+
     return SafeArea(
       child: Scaffold(
           body: Padding(
@@ -91,19 +93,49 @@ class MainScreen extends StatelessWidget {
               )
             ],
           ),
+          const SizedBox(
+            height: 50,
+          ),
+          //taglist
           SizedBox(
-            height: 100,
+            height: 35,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: 5,
+                itemCount: tagList.length,
                 itemBuilder: ((context, index) {
                   return Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: EdgeInsets.fromLTRB(
+                        0, 0, index == 0 ? bodyMargin : 15, 0),
                     child: Container(
-                      height: 20,
-                      width: 40,
-                      color: Colors.black,
-                    ),
+                        height: 35,
+                        decoration: const BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(14)),
+                          gradient: LinearGradient(
+                              colors: gradientColors.tags,
+                              begin: Alignment.centerRight,
+                              end: Alignment.centerLeft),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(31, 8, 14, 8),
+                          child: Row(
+                            children: [
+                              ImageIcon(
+                                Image.asset(
+                                  Assets.icons.hashtag.path,
+                                ).image,
+                                color: Colors.white,
+                                size: 16,
+                              ),
+                              const SizedBox(
+                                width: 22,
+                              ),
+                              Text(
+                                tagList[index].title,
+                                style: textTheme.headline2,
+                              )
+                            ],
+                          ),
+                        )),
                   );
                 })),
           )
