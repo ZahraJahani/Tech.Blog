@@ -34,7 +34,7 @@ class _splashScreenState extends State<splashScreen> {
               height: 32,
             ),
             const SpinKitFadingCube(
-              color: solidColors.primaryColor,
+              color: SolidColors.primaryColor,
               size: 30,
             )
           ]),

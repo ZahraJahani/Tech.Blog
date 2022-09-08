@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class solidColors {
+class SolidColors {
   static const Color posterTitle = Color.fromARGB(255, 255, 255, 255);
   static const Color posterSubtitle = Color.fromARGB(200, 255, 255, 255);
   static const Color primaryColor = Color.fromARGB(255, 68, 4, 87);
@@ -18,7 +18,7 @@ class solidColors {
   static const Color seeMore = Color.fromARGB(255, 40, 107, 184);
 }
 
-class gradientColors {
+class GradientColors {
   static const List<Color> bottomNav = [
     Color.fromARGB(255, 25, 0, 94),
     Color.fromARGB(255, 68, 4, 87)
@@ -26,6 +26,10 @@ class gradientColors {
   static const List<Color> tags = [
     Color.fromARGB(255, 0, 0, 0),
     Color.fromARGB(255, 63, 63, 87)
+  ];
+  static const List<Color> blogPost = [
+    Color.fromARGB(255, 0, 0, 0),
+    Color.fromARGB(0, 0, 0, 0)
   ];
   static const List<Color> homePosterCover = [
     Color.fromARGB(0, 0, 0, 0),

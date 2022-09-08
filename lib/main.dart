@@ -7,9 +7,9 @@ import 'package:tec/splash_screen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      statusBarColor: solidColors.statusBarColor,
+      statusBarColor: SolidColors.statusBarColor,
       statusBarIconBrightness: Brightness.dark,
-      systemNavigationBarColor: solidColors.systemNavigationBarColor,
+      systemNavigationBarColor: SolidColors.systemNavigationBarColor,
       systemNavigationBarIconBrightness: Brightness.dark));
   runApp(const MyApp());
 }
@@ -35,12 +35,12 @@ class MyApp extends StatelessWidget {
               headline1: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 16,
-                  color: solidColors.posterTitle,
+                  color: SolidColors.posterTitle,
                   fontWeight: FontWeight.w700),
               subtitle1: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 14,
-                  color: solidColors.posterSubtitle,
+                  color: SolidColors.posterSubtitle,
                   fontWeight: FontWeight.w300),
               bodyText1: TextStyle(
                   fontFamily: 'dana',
@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
               headline3: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 14,
-                  color: solidColors.seeMore,
+                  color: SolidColors.seeMore,
                   fontWeight: FontWeight.w300),
               headline4: TextStyle(
                   fontFamily: 'dana',

@@ -49,7 +49,7 @@ class MainScreen extends StatelessWidget {
                 foregroundDecoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(16)),
                     gradient: LinearGradient(
-                        colors: gradientColors.homePosterCover,
+                        colors: GradientColors.homePosterCover,
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter)),
               ),
@@ -79,7 +79,7 @@ class MainScreen extends StatelessWidget {
                             ),
                             const Icon(
                               Icons.remove_red_eye_sharp,
-                              color: solidColors.posterSubtitle,
+                              color: SolidColors.posterSubtitle,
                               size: 17,
                             ),
                           ],
@@ -113,7 +113,7 @@ class MainScreen extends StatelessWidget {
                         decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(14)),
                           gradient: LinearGradient(
-                              colors: gradientColors.tags,
+                              colors: GradientColors.tags,
                               begin: Alignment.centerRight,
                               end: Alignment.centerLeft),
                         ),
@@ -153,7 +153,7 @@ class MainScreen extends StatelessWidget {
               children: [
                 ImageIcon(
                   Image.asset(Assets.icons.bluepen.path).image,
-                  color: solidColors.seeMore,
+                  color: SolidColors.seeMore,
                   size: 22,
                 ),
                 const SizedBox(
@@ -163,24 +163,70 @@ class MainScreen extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(right: bodyMargin),
-            child: SizedBox(
-              height: size.height / 4.1,
-              child: ListView.builder(
-                itemCount: 7,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      height: 50,
-                      width: 100,
-                      color: Colors.amberAccent,
-                    ),
-                  );
-                },
-              ),
+          //blog list
+          SizedBox(
+            height: size.height / 4.1,
+            child: ListView.builder(
+              itemCount: blogList.getRange(0, 5).length,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                //blog item
+                return Padding(
+                  padding: EdgeInsets.only(right: index == 0 ? bodyMargin : 15),
+                  child: SizedBox(
+                    width: size.width / 2.5,
+                    height: size.height / 5.4,
+                    child: Stack(children: [
+                      Container(
+                          decoration: BoxDecoration(
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(16)),
+                            image: DecorationImage(
+                              image: NetworkImage(blogList[index].imageUrl),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          foregroundDecoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(16)),
+                            gradient: LinearGradient(
+                                begin: Alignment.bottomCenter,
+                                end: Alignment.topCenter,
+                                colors: GradientColors.blogPost),
+                          )),
+                      Positioned(
+                        bottom: 8,
+                        left: 0,
+                        right: 0,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Text(
+                              blogList[index].writer,
+                              style: textTheme.subtitle1,
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  blogList[index].views,
+                                  style: textTheme.subtitle1,
+                                ),
+                                const SizedBox(
+                                  width: 4,
+                                ),
+                                const Icon(
+                                  Icons.remove_red_eye_sharp,
+                                  color: SolidColors.posterSubtitle,
+                                  size: 17,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      )
+                    ]),
+                  ),
+                );
+              },
             ),
           )
         ]),
