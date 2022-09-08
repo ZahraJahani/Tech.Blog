@@ -4,6 +4,7 @@ import 'package:tec/gen/assets.gen.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:tec/models/fake_data.dart';
 import 'package:tec/my_colors.dart';
+import 'package:tec/my_strings.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -34,6 +35,7 @@ class MainScreen extends StatelessWidget {
           const SizedBox(
             height: 13,
           ),
+          //poster
           Stack(
             children: [
               Container(
@@ -94,7 +96,7 @@ class MainScreen extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 50,
+            height: 20,
           ),
           //taglist
           SizedBox(
@@ -138,6 +140,48 @@ class MainScreen extends StatelessWidget {
                         )),
                   );
                 })),
+          ),
+          const SizedBox(
+            height: 32,
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              right: bodyMargin,
+              bottom: 8,
+            ),
+            child: Row(
+              children: [
+                ImageIcon(
+                  Image.asset(Assets.icons.bluepen.path).image,
+                  color: solidColors.seeMore,
+                  size: 22,
+                ),
+                const SizedBox(
+                  width: 12,
+                ),
+                Text(myStrings.viewHotestBlog, style: textTheme.headline3)
+              ],
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: bodyMargin),
+            child: SizedBox(
+              height: size.height / 4.1,
+              child: ListView.builder(
+                itemCount: 7,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 50,
+                      width: 100,
+                      color: Colors.amberAccent,
+                    ),
+                  );
+                },
+              ),
+            ),
           )
         ]),
       )),

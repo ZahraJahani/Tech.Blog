@@ -12,6 +12,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/bluepen.png
+  AssetGenImage get bluepen => const AssetGenImage('assets/icons/bluepen.png');
+
   /// File path: assets/icons/hashtag.png
   AssetGenImage get hashtag => const AssetGenImage('assets/icons/hashtag.png');
 }
