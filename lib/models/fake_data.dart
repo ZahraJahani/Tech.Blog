@@ -246,3 +246,97 @@ List<BlogModel> blogList = [
       """,
       views: "256")
 ];
+List<PodcastModel> podcastList = [
+  PodcastModel(
+    id: 1,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/photo_2022-04-29_09-37-59.jpg",
+    title: "دارما پادکست",
+  ),
+  PodcastModel(
+    id: 2,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/photo_2022-04-29_09-06-13.jpg",
+    title: "پادکست",
+  ),
+  PodcastModel(
+    id: 3,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/1200-178443098-space-exploration-risks_smaller.jpg",
+    title: "کاوشگران سیاره سرخ چگونه به تولید برق در مریخ می‌پردازند؟",
+  ),
+  PodcastModel(
+    id: 4,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/13WELLREAD-CACIOPPO-superJumbo.jpg",
+    title: "چگونه عشق بر عملکرد مغز ما تاثیر می‌گذارد؟",
+  ),
+  PodcastModel(
+    id: 5,
+    imageUrl: "https://digiato.com/wp-content/uploads/2022/04/cghjm.jpg",
+    title: "ساخت اسپیکرهای فوق باریک توسط مهندسان MIT",
+  ),
+  PodcastModel(
+    id: 6,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/photo_2022-04-29_09-37-59.jpg",
+    title: "ایلان ماسک حدود 4 میلیارد دلار از سهام تسلا را فروخت",
+  ),
+  PodcastModel(
+    id: 7,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/photo_2022-04-29_09-06-13.jpg",
+    title: "گزارش درآمد فصل دوم سال مالی 2022 اپل منتشر شد؛ رشد 9 درصدی درآمد",
+  ),
+  PodcastModel(
+    id: 8,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/1200-178443098-space-exploration-risks_smaller.jpg",
+    title: "کاوشگران سیاره سرخ چگونه به تولید برق در مریخ می‌پردازند؟",
+  ),
+  PodcastModel(
+    id: 9,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/13WELLREAD-CACIOPPO-superJumbo.jpg",
+    title: "چگونه عشق بر عملکرد مغز ما تاثیر می‌گذارد؟",
+  ),
+  PodcastModel(
+    id: 10,
+    imageUrl: "https://digiato.com/wp-content/uploads/2022/04/cghjm.jpg",
+    title: "ساخت اسپیکرهای فوق باریک توسط مهندسان MIT",
+  ),
+  PodcastModel(
+    id: 11,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/photo_2022-04-29_09-37-59.jpg",
+    title: "ایلان ماسک حدود 4 میلیارد دلار از سهام تسلا را فروخت",
+  ),
+  PodcastModel(
+    id: 12,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/photo_2022-04-29_09-06-13.jpg",
+    title: "گزارش درآمد فصل دوم سال مالی 2022 اپل منتشر شد؛ رشد 9 درصدی درآمد",
+  ),
+  PodcastModel(
+    id: 13,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/1200-178443098-space-exploration-risks_smaller.jpg",
+    title: "کاوشگران سیاره سرخ چگونه به تولید برق در مریخ می‌پردازند؟",
+  ),
+  PodcastModel(
+    id: 14,
+    imageUrl:
+        "https://digiato.com/wp-content/uploads/2022/04/13WELLREAD-CACIOPPO-superJumbo.jpg",
+    title: "چگونه عشق بر عملکرد مغز ما تاثیر می‌گذارد؟",
+  ),
+  PodcastModel(
+    id: 15,
+    imageUrl: "https://digiato.com/wp-content/uploads/2022/04/cghjm.jpg",
+    title: "ساخت اسپیکرهای فوق باریک توسط مهندسان MIT",
+  ),
+  PodcastModel(
+    id: 16,
+    imageUrl: "",
+    title: "",
+  )
+];

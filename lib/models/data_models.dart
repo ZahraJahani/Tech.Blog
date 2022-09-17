@@ -23,3 +23,14 @@ class BlogModel {
     required this.views,
   });
 }
+
+class PodcastModel {
+  int id;
+  String imageUrl;
+  String title;
+  PodcastModel({
+    required this.id,
+    required this.imageUrl,
+    required this.title,
+  });
+}
