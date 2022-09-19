@@ -44,6 +44,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/programming.png
   AssetGenImage get programming =>
       const AssetGenImage('assets/images/programming.png');
+
+  /// File path: assets/images/techbot.svg
+  String get techbot => 'assets/images/techbot.svg';
 }
 
 class Assets {

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:tec/gen/assets.gen.dart';
 import 'package:tec/my_colors.dart';
+import 'package:tec/view/register_intro.dart';
 import 'package:tec/view/splash_screen.dart';
 
 void main() {
@@ -62,8 +63,13 @@ class MyApp extends StatelessWidget {
                   fontSize: 14,
                   color: Color.fromARGB(255, 70, 70, 70),
                   fontWeight: FontWeight.w700),
+              headline5: TextStyle(
+                  fontFamily: 'dana',
+                  fontSize: 14,
+                  color: SolidColors.primaryColor,
+                  fontWeight: FontWeight.w700),
             )),
         debugShowCheckedModeBanner: false,
-        home: splashScreen());
+        home: RegisterIntro());
   }
 }

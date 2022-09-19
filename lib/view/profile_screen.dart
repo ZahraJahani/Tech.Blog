@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tec/my_colors.dart';
+import 'package:tec/my_componnent.dart';
 import 'package:tec/my_strings.dart';
 import 'package:tec/gen/assets.gen.dart';
 import 'package:tec/models/fake_data.dart';
@@ -23,12 +24,9 @@ class ProfileScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 58),
-              child: Image.asset(
-                Assets.images.avatar.path,
-                height: 100,
-              ),
+            Image.asset(
+              Assets.images.avatar.path,
+              height: 100,
             ),
             const SizedBox(height: 12),
             Row(
@@ -53,7 +51,7 @@ class ProfileScreen extends StatelessWidget {
             ),
             Text(
               "زهرا جهانی",
-              style: textTheme.headline4,
+              style: textTheme.headline5,
             ),
             Text(
               "zahra.jahani.dez@gmail.com",
@@ -62,11 +60,38 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(
               height: 40,
             ),
-            Divider(
-              thickness: 0.5,
-              color: SolidColors.divider,
-              indent: size.width / 5,
-              endIndent: size.width / 5,
+            TechDivider(size: size),
+            InkWell(
+              onTap: (() {}),
+              splashColor: SolidColors.primaryColor,
+              child: SizedBox(
+                  height: 45,
+                  child: Center(
+                      child: Text(myStrings.myFavBlog,
+                          style: textTheme.headline4))),
+            ),
+            TechDivider(size: size),
+            InkWell(
+              onTap: (() {}),
+              splashColor: SolidColors.primaryColor,
+              child: SizedBox(
+                  height: 45,
+                  child: Center(
+                      child: Text(myStrings.myFavPodcast,
+                          style: textTheme.headline4))),
+            ),
+            TechDivider(size: size),
+            InkWell(
+              onTap: (() {}),
+              splashColor: SolidColors.primaryColor,
+              child: SizedBox(
+                  height: 45,
+                  child: Center(
+                      child:
+                          Text(myStrings.logOut, style: textTheme.headline4))),
+            ),
+            const SizedBox(
+              height: 62,
             )
           ],
         ));
