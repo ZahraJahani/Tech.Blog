@@ -166,7 +166,7 @@ class SeeMorePodcast extends StatelessWidget {
             width: 12,
           ),
           Text(
-            myStrings.viewHotestPodcast,
+            MyStrings.viewHotestPodcast,
             style: textTheme.headline3,
           )
         ],
@@ -261,7 +261,7 @@ class SeeMoreBlog extends StatelessWidget {
           const SizedBox(
             width: 12,
           ),
-          Text(myStrings.viewHotestBlog, style: textTheme.headline3)
+          Text(MyStrings.viewHotestBlog, style: textTheme.headline3)
         ],
       ),
     );

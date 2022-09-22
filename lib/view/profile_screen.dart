@@ -3,7 +3,6 @@ import 'package:tec/my_colors.dart';
 import 'package:tec/my_componnent.dart';
 import 'package:tec/my_strings.dart';
 import 'package:tec/gen/assets.gen.dart';
-import 'package:tec/models/fake_data.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({
@@ -41,7 +40,7 @@ class ProfileScreen extends StatelessWidget {
                   width: 8,
                 ),
                 Text(
-                  myStrings.imageProfileEdit,
+                  MyStrings.imageProfileEdit,
                   style: textTheme.headline3,
                 )
               ],
@@ -67,7 +66,7 @@ class ProfileScreen extends StatelessWidget {
               child: SizedBox(
                   height: 45,
                   child: Center(
-                      child: Text(myStrings.myFavBlog,
+                      child: Text(MyStrings.myFavBlog,
                           style: textTheme.headline4))),
             ),
             TechDivider(size: size),
@@ -77,7 +76,7 @@ class ProfileScreen extends StatelessWidget {
               child: SizedBox(
                   height: 45,
                   child: Center(
-                      child: Text(myStrings.myFavPodcast,
+                      child: Text(MyStrings.myFavPodcast,
                           style: textTheme.headline4))),
             ),
             TechDivider(size: size),
@@ -88,7 +87,7 @@ class ProfileScreen extends StatelessWidget {
                   height: 45,
                   child: Center(
                       child:
-                          Text(myStrings.logOut, style: textTheme.headline4))),
+                          Text(MyStrings.logOut, style: textTheme.headline4))),
             ),
             const SizedBox(
               height: 62,

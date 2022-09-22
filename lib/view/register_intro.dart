@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tec/my_colors.dart';
@@ -7,17 +6,17 @@ import 'package:tec/my_strings.dart';
 import '../gen/assets.gen.dart';
 
 class RegisterIntro extends StatelessWidget {
+  const RegisterIntro({super.key});
+
   @override
   Widget build(BuildContext context) {
     var textTheme = Theme.of(context).textTheme;
-    var size = MediaQuery.of(context).size;
-    // TODO: implement build
     return SafeArea(
         child: Scaffold(
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           SvgPicture.asset(
-            Assets.images.techbot,
+            Assets.images.techbot.path,
             height: 100,
           ),
           Padding(
@@ -25,15 +24,12 @@ class RegisterIntro extends StatelessWidget {
             child: RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(
-                    text: myStrings.welcome, style: textTheme.headline4)),
+                    text: MyStrings.welcome, style: textTheme.headline4)),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 32),
             child: ElevatedButton(
                 onPressed: () {},
-                child: Text(
-                  "بزن بریم",
-                ),
                 style: ButtonStyle(
                   textStyle: MaterialStateProperty.resolveWith((states) {
                     if (states.contains(MaterialState.pressed)) {
@@ -47,6 +43,9 @@ class RegisterIntro extends StatelessWidget {
                     }
                     return SolidColors.primaryColor;
                   }),
+                ),
+                child: const Text(
+                  "بزن بریم",
                 )),
           )
         ]),
