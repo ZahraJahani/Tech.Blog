@@ -20,79 +20,82 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              Assets.images.avatar.path,
-              height: 100,
-            ),
-            const SizedBox(height: 12),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ImageIcon(
-                  Image.asset(Assets.icons.bluepen.path).image,
-                  color: SolidColors.seeMore,
-                  size: 18,
-                ),
-                const SizedBox(
-                  width: 8,
-                ),
-                Text(
-                  MyStrings.imageProfileEdit,
-                  style: textTheme.headline3,
-                )
-              ],
-            ),
-            const SizedBox(
-              height: 60,
-            ),
-            Text(
-              "زهرا جهانی",
-              style: textTheme.headline5,
-            ),
-            Text(
-              "zahra.jahani.dez@gmail.com",
-              style: textTheme.headline4,
-            ),
-            const SizedBox(
-              height: 40,
-            ),
-            TechDivider(size: size),
-            InkWell(
-              onTap: (() {}),
-              splashColor: SolidColors.primaryColor,
-              child: SizedBox(
-                  height: 45,
-                  child: Center(
-                      child: Text(MyStrings.myFavBlog,
-                          style: textTheme.headline4))),
-            ),
-            TechDivider(size: size),
-            InkWell(
-              onTap: (() {}),
-              splashColor: SolidColors.primaryColor,
-              child: SizedBox(
-                  height: 45,
-                  child: Center(
-                      child: Text(MyStrings.myFavPodcast,
-                          style: textTheme.headline4))),
-            ),
-            TechDivider(size: size),
-            InkWell(
-              onTap: (() {}),
-              splashColor: SolidColors.primaryColor,
-              child: SizedBox(
-                  height: 45,
-                  child: Center(
-                      child:
-                          Text(MyStrings.logOut, style: textTheme.headline4))),
-            ),
-            const SizedBox(
-              height: 62,
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(top: 24),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                Assets.images.avatar.path,
+                height: 100,
+              ),
+              const SizedBox(height: 12),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ImageIcon(
+                    Image.asset(Assets.icons.bluepen.path).image,
+                    color: SolidColors.seeMore,
+                    size: 18,
+                  ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Text(
+                    MyStrings.imageProfileEdit,
+                    style: textTheme.headline3,
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 60,
+              ),
+              Text(
+                "زهرا جهانی",
+                style: textTheme.headline5,
+              ),
+              Text(
+                "zahra.jahani.dez@gmail.com",
+                style: textTheme.headline4,
+              ),
+              const SizedBox(
+                height: 40,
+              ),
+              TechDivider(size: size),
+              InkWell(
+                onTap: (() {}),
+                splashColor: SolidColors.primaryColor,
+                child: SizedBox(
+                    height: 45,
+                    child: Center(
+                        child: Text(MyStrings.myFavBlog,
+                            style: textTheme.headline4))),
+              ),
+              TechDivider(size: size),
+              InkWell(
+                onTap: (() {}),
+                splashColor: SolidColors.primaryColor,
+                child: SizedBox(
+                    height: 45,
+                    child: Center(
+                        child: Text(MyStrings.myFavPodcast,
+                            style: textTheme.headline4))),
+              ),
+              TechDivider(size: size),
+              InkWell(
+                onTap: (() {}),
+                splashColor: SolidColors.primaryColor,
+                child: SizedBox(
+                    height: 45,
+                    child: Center(
+                        child: Text(MyStrings.logOut,
+                            style: textTheme.headline4))),
+              ),
+              const SizedBox(
+                height: 62,
+              )
+            ],
+          ),
         ));
   }
 }
