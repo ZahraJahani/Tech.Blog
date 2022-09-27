@@ -10,6 +10,7 @@ class MyStrings {
   static const String logOut = "خروج از حساب کاربری";
   static const String inserYourImail = "لطفا ايميليت رو وارد كن";
   static const String activateCode = "کد فعالسازی رو وارد كن";
+  static const String chooseCats = "دسته بندی هایی که دوست داری رو انتخاب کن";
   static const String successfulRegistration =
       """تبریک میگم، ایمیل با موفقیت تایید شد
   لطفا اطلاعات ثبت نام رو کامل کن""";
