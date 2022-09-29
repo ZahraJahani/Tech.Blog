@@ -97,6 +97,6 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.w700),
             )),
         debugShowCheckedModeBanner: false,
-        home: const RegisterIntro());
+        home: const MainScreen());
   }
 }
