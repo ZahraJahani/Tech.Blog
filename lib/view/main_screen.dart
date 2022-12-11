@@ -8,7 +8,7 @@ import 'package:tec/view/home_screen.dart';
 import 'package:tec/view/profile_screen.dart';
 
 class MainScreen extends StatefulWidget {
-  const MainScreen({super.key});
+  const MainScreen({Key? key}) : super(key: key);
 
   @override
   State<MainScreen> createState() => _MainScreenState();
@@ -153,7 +153,7 @@ class BottomNavigation extends StatelessWidget {
       right: 0,
       child: Container(
         height: size.height / 10,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
             gradient: LinearGradient(
                 colors: GradientColors.bottomNavBackground,
                 begin: Alignment.topCenter,
@@ -162,8 +162,8 @@ class BottomNavigation extends StatelessWidget {
           padding: EdgeInsets.only(right: bodyMargin, left: bodyMargin),
           child: Container(
             height: size.height / 8,
-            decoration: const BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(18)),
+            decoration: BoxDecoration(
+                borderRadius: const BorderRadius.all(Radius.circular(18)),
                 gradient: LinearGradient(colors: GradientColors.bottomNav)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,

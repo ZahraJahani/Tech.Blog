@@ -5,7 +5,7 @@ import 'package:tec/view/main_screen.dart';
 import 'package:tec/my_colors.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     Future.delayed(const Duration(seconds: 3)).then((value) {
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const MainScreen()));
+          MaterialPageRoute(builder: (context) => MainScreen()));
     });
     super.initState();
   }

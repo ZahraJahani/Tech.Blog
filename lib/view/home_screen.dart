@@ -87,8 +87,9 @@ class HomePageBlogList extends StatelessWidget {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        foregroundDecoration: const BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(16)),
+                        foregroundDecoration: BoxDecoration(
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(16)),
                           gradient: LinearGradient(
                               begin: Alignment.bottomCenter,
                               end: Alignment.topCenter,
@@ -322,8 +323,8 @@ class HomePagePoster extends StatelessWidget {
               image: DecorationImage(
                   image: AssetImage(homePagePosterMap["imageAsset"]),
                   fit: BoxFit.cover)),
-          foregroundDecoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(16)),
+          foregroundDecoration: BoxDecoration(
+              borderRadius: const BorderRadius.all(Radius.circular(16)),
               gradient: LinearGradient(
                   colors: GradientColors.homePosterCover,
                   begin: Alignment.topCenter,

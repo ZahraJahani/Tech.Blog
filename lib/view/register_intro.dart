@@ -6,7 +6,7 @@ import 'package:tec/gen/assets.gen.dart';
 import 'package:tec/my_strings.dart';
 
 class RegisterIntro extends StatelessWidget {
-  const RegisterIntro({super.key});
+  const RegisterIntro({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -136,8 +136,8 @@ class RegisterIntro extends StatelessWidget {
                   ),
                   ElevatedButton(
                       onPressed: (() {
-                        Navigator.of(context).pushReplacement(
-                            MaterialPageRoute(builder: (context) => MyCats()));
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => const MyCats()));
                       }),
                       child: const Text("ادامه")),
                 ],
