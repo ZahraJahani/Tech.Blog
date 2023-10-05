@@ -43,7 +43,7 @@ class _MainScreenState extends State<MainScreen> {
                     ListTile(
                       title: Text(
                         "پروفایل کاربری",
-                        style: textTheme.headline4,
+                        style: textTheme.headlineMedium,
                       ),
                       onTap: () {},
                     ),
@@ -53,7 +53,7 @@ class _MainScreenState extends State<MainScreen> {
                     ListTile(
                       title: Text(
                         "درباره تکبلاگ",
-                        style: textTheme.headline4,
+                        style: textTheme.headlineMedium,
                       ),
                       onTap: () {},
                     ),
@@ -63,7 +63,7 @@ class _MainScreenState extends State<MainScreen> {
                     ListTile(
                       title: Text(
                         "اشتراک گذاری تکبلاگ",
-                        style: textTheme.headline4,
+                        style: textTheme.headlineMedium,
                       ),
                       onTap: () {},
                     ),
@@ -73,7 +73,7 @@ class _MainScreenState extends State<MainScreen> {
                     ListTile(
                       title: Text(
                         "تکبلاگ در گیت هاب",
-                        style: textTheme.headline4,
+                        style: textTheme.headlineMedium,
                       ),
                       onTap: () {},
                     ),
@@ -153,7 +153,7 @@ class BottomNavigation extends StatelessWidget {
       right: 0,
       child: Container(
         height: size.height / 10,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             gradient: LinearGradient(
                 colors: GradientColors.bottomNavBackground,
                 begin: Alignment.topCenter,
@@ -162,8 +162,8 @@ class BottomNavigation extends StatelessWidget {
           padding: EdgeInsets.only(right: bodyMargin, left: bodyMargin),
           child: Container(
             height: size.height / 8,
-            decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.circular(18)),
+            decoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(18)),
                 gradient: LinearGradient(colors: GradientColors.bottomNav)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,

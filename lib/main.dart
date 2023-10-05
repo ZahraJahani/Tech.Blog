@@ -42,9 +42,9 @@ class MyApp extends StatelessWidget {
                 style: ButtonStyle(
               textStyle: MaterialStateProperty.resolveWith((states) {
                 if (states.contains(MaterialState.pressed)) {
-                  return textTheme.headline1;
+                  return textTheme.displayLarge;
                 }
-                return textTheme.subtitle1;
+                return textTheme.titleMedium;
               }),
               backgroundColor: MaterialStateProperty.resolveWith((states) {
                 if (states.contains(MaterialState.pressed)) {
@@ -55,48 +55,48 @@ class MyApp extends StatelessWidget {
             )),
             fontFamily: 'dana',
             textTheme: const TextTheme(
-              headline1: TextStyle(
+              displayLarge: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 16,
                   color: SolidColors.posterTitle,
                   fontWeight: FontWeight.w700),
-              subtitle1: TextStyle(
+              titleMedium: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 14,
                   color: SolidColors.posterSubtitle,
                   fontWeight: FontWeight.w300),
-              bodyText1: TextStyle(
+              bodyLarge: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 14,
                   color: Color.fromARGB(255, 70, 70, 70),
                   fontWeight: FontWeight.w300),
-              headline2: TextStyle(
+              displayMedium: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 14,
                   color: Color.fromARGB(255, 255, 255, 255),
                   fontWeight: FontWeight.w300),
-              headline3: TextStyle(
+              displaySmall: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 14,
                   color: SolidColors.seeMore,
                   fontWeight: FontWeight.w300),
-              headline4: TextStyle(
+              headlineMedium: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 14,
                   color: Color.fromARGB(255, 70, 70, 70),
                   fontWeight: FontWeight.w700),
-              headline5: TextStyle(
+              headlineSmall: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 14,
                   color: SolidColors.primaryColor,
                   fontWeight: FontWeight.w700),
-              headline6: TextStyle(
+              titleLarge: TextStyle(
                   fontFamily: 'dana',
                   fontSize: 14,
                   color: SolidColors.hintText,
                   fontWeight: FontWeight.w700),
             )),
         debugShowCheckedModeBanner: false,
-        home: MyCats());
+        home: const MyCats());
   }
 }

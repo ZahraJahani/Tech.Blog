@@ -25,7 +25,7 @@ class RegisterIntro extends StatelessWidget {
             child: RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(
-                    text: MyStrings.welcome, style: textTheme.headline4)),
+                    text: MyStrings.welcome, style: textTheme.headlineMedium)),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 32),
@@ -65,7 +65,7 @@ class RegisterIntro extends StatelessWidget {
                 children: [
                   Text(
                     MyStrings.inserYourImail,
-                    style: textTheme.headline4,
+                    style: textTheme.headlineMedium,
                   ),
                   Padding(
                     padding: const EdgeInsets.all(24),
@@ -74,11 +74,11 @@ class RegisterIntro extends StatelessWidget {
                         print(value + "is Email: " + isEmail(value).toString());
                       },
                       // cursorColor: SolidColors.primaryColor,
-                      style: textTheme.headline5,
+                      style: textTheme.headlineSmall,
                       textAlign: TextAlign.center,
                       decoration: InputDecoration(
                           hintText: "techblog@gmail.com",
-                          hintStyle: textTheme.headline6),
+                          hintStyle: textTheme.titleLarge),
                     ),
                   ),
                   ElevatedButton(
@@ -119,7 +119,7 @@ class RegisterIntro extends StatelessWidget {
                 children: [
                   Text(
                     MyStrings.activateCode,
-                    style: textTheme.headline4,
+                    style: textTheme.headlineMedium,
                   ),
                   Padding(
                     padding: const EdgeInsets.all(24),
@@ -128,10 +128,10 @@ class RegisterIntro extends StatelessWidget {
                         print(value + "is Email: " + isEmail(value).toString());
                       },
                       // cursorColor: SolidColors.primaryColor,
-                      style: textTheme.headline5,
+                      style: textTheme.headlineSmall,
                       textAlign: TextAlign.center,
                       decoration: InputDecoration(
-                          hintText: "******", hintStyle: textTheme.headline6),
+                          hintText: "******", hintStyle: textTheme.titleLarge),
                     ),
                   ),
                   ElevatedButton(

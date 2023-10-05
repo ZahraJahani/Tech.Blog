@@ -87,9 +87,8 @@ class HomePageBlogList extends StatelessWidget {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        foregroundDecoration: BoxDecoration(
-                          borderRadius:
-                              const BorderRadius.all(Radius.circular(16)),
+                        foregroundDecoration: const BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(16)),
                           gradient: LinearGradient(
                               begin: Alignment.bottomCenter,
                               end: Alignment.topCenter,
@@ -104,13 +103,13 @@ class HomePageBlogList extends StatelessWidget {
                         children: [
                           Text(
                             blogList[index].writer,
-                            style: textTheme.subtitle1,
+                            style: textTheme.titleMedium,
                           ),
                           Row(
                             children: [
                               Text(
                                 blogList[index].views,
-                                style: textTheme.subtitle1,
+                                style: textTheme.titleMedium,
                               ),
                               const SizedBox(
                                 width: 4,
@@ -169,7 +168,7 @@ class SeeMorePodcast extends StatelessWidget {
           ),
           Text(
             MyStrings.viewHotestPodcast,
-            style: textTheme.headline3,
+            style: textTheme.displaySmall,
           )
         ],
       ),
@@ -263,7 +262,7 @@ class SeeMoreBlog extends StatelessWidget {
           const SizedBox(
             width: 12,
           ),
-          Text(MyStrings.viewHotestBlog, style: textTheme.headline3)
+          Text(MyStrings.viewHotestBlog, style: textTheme.displaySmall)
         ],
       ),
     );
@@ -323,8 +322,8 @@ class HomePagePoster extends StatelessWidget {
               image: DecorationImage(
                   image: AssetImage(homePagePosterMap["imageAsset"]),
                   fit: BoxFit.cover)),
-          foregroundDecoration: BoxDecoration(
-              borderRadius: const BorderRadius.all(Radius.circular(16)),
+          foregroundDecoration: const BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
               gradient: LinearGradient(
                   colors: GradientColors.homePosterCover,
                   begin: Alignment.topCenter,
@@ -343,13 +342,13 @@ class HomePagePoster extends StatelessWidget {
                     homePagePosterMap["writer"] +
                         " - " +
                         homePagePosterMap["date"],
-                    style: textTheme.subtitle1,
+                    style: textTheme.titleMedium,
                   ),
                   Row(
                     children: [
                       Text(
                         homePagePosterMap["view"],
-                        style: textTheme.subtitle1,
+                        style: textTheme.titleMedium,
                       ),
                       const SizedBox(
                         width: 4,
@@ -365,7 +364,7 @@ class HomePagePoster extends StatelessWidget {
               ),
               Text(
                 "دوازده قدم برنامه نویسی یک دوره ی ...س",
-                style: textTheme.headline1,
+                style: textTheme.displayLarge,
               )
             ],
           ),

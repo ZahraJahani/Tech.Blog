@@ -36,7 +36,7 @@ class MainTags extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: 35,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(200)),
           gradient: LinearGradient(
               colors: GradientColors.tags,
@@ -59,7 +59,7 @@ class MainTags extends StatelessWidget {
               ),
               Text(
                 tagList[index].title,
-                style: textTheme.headline2,
+                style: textTheme.displayMedium,
               )
             ],
           ),

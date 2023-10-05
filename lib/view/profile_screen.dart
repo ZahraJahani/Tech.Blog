@@ -43,7 +43,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   Text(
                     MyStrings.imageProfileEdit,
-                    style: textTheme.headline3,
+                    style: textTheme.displaySmall,
                   )
                 ],
               ),
@@ -52,11 +52,11 @@ class ProfileScreen extends StatelessWidget {
               ),
               Text(
                 "زهرا جهانی",
-                style: textTheme.headline5,
+                style: textTheme.headlineSmall,
               ),
               Text(
                 "zahra.jahani.dez@gmail.com",
-                style: textTheme.headline4,
+                style: textTheme.headlineMedium,
               ),
               const SizedBox(
                 height: 40,
@@ -69,7 +69,7 @@ class ProfileScreen extends StatelessWidget {
                     height: 45,
                     child: Center(
                         child: Text(MyStrings.myFavBlog,
-                            style: textTheme.headline4))),
+                            style: textTheme.headlineMedium))),
               ),
               TechDivider(size: size),
               InkWell(
@@ -79,7 +79,7 @@ class ProfileScreen extends StatelessWidget {
                     height: 45,
                     child: Center(
                         child: Text(MyStrings.myFavPodcast,
-                            style: textTheme.headline4))),
+                            style: textTheme.headlineMedium))),
               ),
               TechDivider(size: size),
               InkWell(
@@ -89,7 +89,7 @@ class ProfileScreen extends StatelessWidget {
                     height: 45,
                     child: Center(
                         child: Text(MyStrings.logOut,
-                            style: textTheme.headline4))),
+                            style: textTheme.headlineMedium))),
               ),
               const SizedBox(
                 height: 62,

@@ -42,7 +42,7 @@ class _MyCatsState extends State<MyCats> {
                     height: 16,
                   ),
                   Text(MyStrings.successfulRegistration,
-                      style: textTheme.headline4),
+                      style: textTheme.headlineMedium),
                   const SizedBox(
                     height: 18,
                   ),
@@ -51,12 +51,12 @@ class _MyCatsState extends State<MyCats> {
                     decoration: InputDecoration(
                         alignLabelWithHint: true,
                         hintText: "نام و نام خانوادگی",
-                        hintStyle: textTheme.headline4),
+                        hintStyle: textTheme.headlineMedium),
                   ),
                   const SizedBox(
                     height: 32,
                   ),
-                  Text(MyStrings.chooseCats, style: textTheme.headline4),
+                  Text(MyStrings.chooseCats, style: textTheme.headlineMedium),
                   //taglist
                   Padding(
                     padding: const EdgeInsets.only(top: 32),
@@ -137,7 +137,7 @@ class _MyCatsState extends State<MyCats> {
                                       ),
                                       Text(
                                         selectedTags[index].title,
-                                        style: textTheme.headline4,
+                                        style: textTheme.headlineMedium,
                                       ),
                                       InkWell(
                                         onTap: (() {
