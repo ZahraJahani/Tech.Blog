@@ -5,7 +5,7 @@ import 'package:tec/view/home_screen.dart';
 import 'package:tec/view/profile_screen.dart';
 
 class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key}) : super(key: key);
+  const MainScreen({super.key});
 
   @override
   State<MainScreen> createState() => _MainScreenState();
@@ -133,11 +133,11 @@ class _MainScreenState extends State<MainScreen> {
 
 class BottomNavigation extends StatelessWidget {
   const BottomNavigation({
-    Key? key,
+    super.key,
     required this.size,
     required this.bodyMargin,
     required this.changeScreen,
-  }) : super(key: key);
+  });
 
   final Size size;
   final double bodyMargin;

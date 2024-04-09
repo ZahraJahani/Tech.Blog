@@ -6,7 +6,7 @@ import 'package:tec/gen/assets.gen.dart';
 import 'package:tec/my_strings.dart';
 
 class RegisterIntro extends StatelessWidget {
-  const RegisterIntro({Key? key}) : super(key: key);
+  const RegisterIntro({super.key});
 
   @override
   Widget build(BuildContext context) {

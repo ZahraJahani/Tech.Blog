@@ -8,7 +8,7 @@ import 'package:tec/my_strings.dart';
 import 'package:tec/my_colors.dart';
 
 class MyCats extends StatefulWidget {
-  const MyCats({Key? key}) : super(key: key);
+  const MyCats({super.key});
 
   @override
   State<MyCats> createState() => _MyCatsState();

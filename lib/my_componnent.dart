@@ -5,9 +5,9 @@ import 'package:tec/my_colors.dart';
 
 class TechDivider extends StatelessWidget {
   const TechDivider({
-    Key? key,
+    super.key,
     required this.size,
-  }) : super(key: key);
+  });
 
   final Size size;
 
@@ -24,10 +24,10 @@ class TechDivider extends StatelessWidget {
 
 class MainTags extends StatelessWidget {
   MainTags({
-    Key? key,
+    super.key,
     required this.textTheme,
     required this.index,
-  }) : super(key: key);
+  });
 
   final TextTheme textTheme;
   var index;

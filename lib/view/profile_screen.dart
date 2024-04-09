@@ -6,11 +6,11 @@ import 'package:tec/gen/assets.gen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({
-    Key? key,
+    super.key,
     required this.size,
     required this.textTheme,
     required this.bodyMargin,
-  }) : super(key: key);
+  });
 
   final Size size;
   final TextTheme textTheme;

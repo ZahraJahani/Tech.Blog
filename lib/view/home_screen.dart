@@ -7,11 +7,11 @@ import 'package:tec/models/fake_data.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({
-    Key? key,
+    super.key,
     required this.size,
     required this.textTheme,
     required this.bodyMargin,
-  }) : super(key: key);
+  });
 
   final Size size;
   final TextTheme textTheme;
@@ -51,11 +51,11 @@ class HomeScreen extends StatelessWidget {
 
 class HomePageBlogList extends StatelessWidget {
   const HomePageBlogList({
-    Key? key,
+    super.key,
     required this.size,
     required this.bodyMargin,
     required this.textTheme,
-  }) : super(key: key);
+  });
 
   final Size size;
   final double bodyMargin;
@@ -144,10 +144,10 @@ class HomePageBlogList extends StatelessWidget {
 
 class SeeMorePodcast extends StatelessWidget {
   const SeeMorePodcast({
-    Key? key,
+    super.key,
     required this.bodyMargin,
     required this.textTheme,
-  }) : super(key: key);
+  });
 
   final double bodyMargin;
   final TextTheme textTheme;
@@ -178,10 +178,10 @@ class SeeMorePodcast extends StatelessWidget {
 
 class HomePagePodcastList extends StatelessWidget {
   const HomePagePodcastList({
-    Key? key,
+    super.key,
     required this.size,
     required this.bodyMargin,
-  }) : super(key: key);
+  });
 
   final Size size;
   final double bodyMargin;
@@ -237,10 +237,10 @@ class HomePagePodcastList extends StatelessWidget {
 
 class SeeMoreBlog extends StatelessWidget {
   const SeeMoreBlog({
-    Key? key,
+    super.key,
     required this.bodyMargin,
     required this.textTheme,
-  }) : super(key: key);
+  });
 
   final double bodyMargin;
   final TextTheme textTheme;
@@ -271,10 +271,10 @@ class SeeMoreBlog extends StatelessWidget {
 
 class HomePageTagList extends StatelessWidget {
   const HomePageTagList({
-    Key? key,
+    super.key,
     required this.bodyMargin,
     required this.textTheme,
-  }) : super(key: key);
+  });
 
   final double bodyMargin;
   final TextTheme textTheme;
@@ -302,10 +302,10 @@ class HomePageTagList extends StatelessWidget {
 
 class HomePagePoster extends StatelessWidget {
   const HomePagePoster({
-    Key? key,
+    super.key,
     required this.size,
     required this.textTheme,
-  }) : super(key: key);
+  });
 
   final Size size;
   final TextTheme textTheme;
